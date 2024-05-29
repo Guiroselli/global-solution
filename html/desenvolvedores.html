@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página dos Desenvolvedores</title>
+    <link rel="stylesheet" href="../css/styledev.css">
+    <link rel="stylesheet" href="../js/scriptdev.js">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="principal">
+        <h1>Desenvolvedores</h1>
+        <div class="desenvolvedores">
+            <div class="conteudodev">
+                <img src="../image/desenvolvedor/guilherme.png" alt="Desenvolvedor Guilherme" id="imgperfil">
+                <div class="infodev">
+                    <p>Guilherme Damasio Roselli</p>
+                    <span>RM: 555873</span>
+                    <div class="linkgithub">
+                        <a href="https://github.com/Guiroselli" target="_blank">
+                            <img src="../image/github_logo.png" alt="GitHub logo">
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteudodev">
+                <img src="../image/desenvolvedores/" alt="Desenvolvedor " id="imgperfil">
+                <div class="infodev">
+                    <p></p>
+                    <span>RM: </span>
+                    <div class="linkgithub">
+                        <a href="" target="_blank">
+                            <img src="../image/github_logo.png" alt="GitHub logo">
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteudodev">
+                <img src="../image/desenvolvedor/" alt="Desenvolvedor " id="imgperfil">
+                <div class="infodev">
+                    <p></p>
+                    <span>RM: </span>
+                    <div class="linkgithub">
+                        <a href="" target="_blank">
+                            <img src="../image/github_logo.png" alt="GitHub logo">
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="repgit">
+            <a href="" target="_blank"><img
+                    src="../image/github_logo.png" alt="GitHub logo">Link Reposítorio</a>
+        </div>
+    </div>
+
+
+    <script>
+        hamburguer_dropdown = document.querySelector(".hamburguer");
+        menu = document.querySelector(".menu");
+        hamburguer_dropdown.onclick = function () {
+            menu.classList.toggle("activate");
+        }
+    </script>
+</body>
+
+</html>
