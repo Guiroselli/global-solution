@@ -1,104 +1,144 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+:root {
+    --cor-fonte: #2F2F2F;
+    --cor-fonte-azul: #06368E;
+    --cor-divmain: #00A1FC;
 }
 
-header {
-    background-color: #0077b6;
-    color: white;
-    padding: 1rem 0;
+.principal {
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
+.principal h1 {
+    color: var(--cor-fonte-azul);
+    font-size: 2.4rem;
 }
 
-menu ul {
-    list-style: none;
-    padding: 0;
+.desenvolvedores {
+    margin-top: 30px;
+    width: 100%;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 1fr));
+    justify-content: center;
+    align-self: center;
+    gap: 15px;
+    justify-items: center;
 }
 
-menu ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-menu ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-main {
-    padding: 1rem;
-}
-
-section {
-    padding: 2rem;
-    margin: 1rem auto;
-    max-width: 800px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-section h2 {
-    border-bottom: 2px solid #0077b6;
-    padding-bottom: 0.5rem;
-}
-
-.developer {
+.conteudodev {
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
-}
-
-.developer img {
-    border-radius: 50%;
-    margin-right: 1rem;
-    width: 100px;
-    height: 100px;
-}
-
-form {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
+
+    width: 310px;
+    background: linear-gradient(180deg, #06368eb9 35%, #fff);
+    padding: 20px 12px;
+
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
 }
 
-form label {
-    margin-top: 1rem;
+.conteudodev #imgperfil {
+    border-radius: 50%;
+    width: 230px;
+    box-shadow: 0px 1px 9px var(--cor-fonte-azul);
+    margin-bottom: 20px;
 }
 
-form input, form textarea {
-    padding: 0.5rem;
-    margin-top: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-form button {
-    margin-top: 1rem;
-    padding: 0.5rem;
-    border: none;
-    background-color: #0077b6;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-form button:hover {
-    background-color: #005f8a;
-}
-
-footer {
+.infodev {
     text-align: center;
-    padding: 1rem 0;
-    background-color: #0077b6;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+.infodev p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.linkgithub a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    gap: 5px;
+
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: var(--cor-fonte-azul);
+    transition: color 0.3s ease, transform 0.3s ease t !important; 
+    transform-origin: center;
+}
+
+.linkgithub a:hover {
+    color: var(--cor-divmain);
+    transform: scale(1.15);
+}
+
+.linkgithub img {
+    width: 18px;
+}
+
+/* REPOSITORIO GITHUB */
+.repgit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.repgit a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    gap: 5px;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--cor-fonte-azul);
+    transition: color 0.3s ease, transform 0.3s ease !important;
+    transform-origin: center;
+}
+
+.repgit a:hover {
+    color: var(--cor-divmain);
+    transform: scale(1.15);
+}
+
+.repgit img {
+    width: 24.6px;
+}
+
+
+@media screen and (max-width: 992px) {
+    
+    .desenvolvedores {
+        grid-template-columns: repeat(2, 330px);
+    }
+
+    .conteudodev:nth-child(3) {
+        margin-top: 10px;
+        grid-column: span 2;
+        justify-self: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+   
+    .principal h1{
+        font-size: 2rem;
+    }
+   
+    .desenvolvedores {
+        grid-template-columns: repeat(1, 330px);
+        gap: 20px;
+    }
+
+    .conteudodev:nth-child(3) {
+        margin: 0;
+        grid-column: auto;
+        justify-self: auto;
+    }
 }
