@@ -7,14 +7,14 @@ body {
     color: #333;
 }
 
-header, footer {
+header{
     background-color: #0077b6;
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
 
-header h1, footer p {
+header h1{
     margin: 0;
 }
 
@@ -94,4 +94,15 @@ form button {
 
 form button:hover {
     background-color: #005b8b;
+}
+
+footer {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
 }
