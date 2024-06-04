@@ -1,7 +1,7 @@
 :root {
     --cor-fonte: #2F2F2F;
-    --cor-fonte-azul: #06368E;
-    --cor-divmain: #00A1FC;
+    --cor-fonte-azul: #0c0c0c;
+    --cor-divmain: #4f5f68;
 }
 
 .principal {
@@ -11,6 +11,13 @@
 .principal h1 {
     color: var(--cor-fonte-azul);
     font-size: 2.4rem;
+}
+
+header, footer {
+    background-color: #4f5f68;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 .desenvolvedores {
@@ -32,7 +39,7 @@
     justify-content: center;
 
     width: 310px;
-    background: linear-gradient(180deg, #06368eb9 35%, #fff);
+    background: linear-gradient(180deg, #3f4757b9 35%, #fff);
     padding: 20px 12px;
 
     border-radius: 15px;
