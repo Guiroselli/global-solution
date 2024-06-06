@@ -1,7 +1,7 @@
 :root {
-    --cor-fonte: #2F2F2F;
+    --cor-fonte: #258996;
     --cor-fonte-azul: #0c0c0c;
-    --cor-divmain: #4f5f68;
+    --cor-divmain: #258996;
 }
 
 .principal {
@@ -14,7 +14,7 @@
 }
 
 header, footer {
-    background-color: #4f5f68;
+    background-color: #258996;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -39,7 +39,7 @@ header, footer {
     justify-content: center;
 
     width: 310px;
-    background: linear-gradient(180deg, #3f4757b9 35%, #fff);
+    background: linear-gradient(180deg, #258996 35%, #fff);
     padding: 20px 12px;
 
     border-radius: 15px;
@@ -86,7 +86,7 @@ header, footer {
     width: 18px;
 }
 
-/* REPOSITORIO GITHUB */
+
 .repgit {
     display: flex;
     justify-content: center;
