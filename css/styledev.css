@@ -1,7 +1,7 @@
 :root {
-    --cor-fonte: #258996;
+    --cor-fonte: #0077b6;
     --cor-fonte-azul: #0c0c0c;
-    --cor-divmain: #258996;
+    --cor-divmain: #0077b6;
 }
 
 .principal {
@@ -14,7 +14,7 @@
 }
 
 header, footer {
-    background-color: #258996;
+    background-color: #0077b6;
     color: white;
     text-align: center;
     padding: 1rem 0;
@@ -39,7 +39,7 @@ header, footer {
     justify-content: center;
 
     width: 310px;
-    background: linear-gradient(180deg, #258996 35%, #fff);
+    background: linear-gradient(180deg, #0077b6 35%, #fff);
     padding: 20px 12px;
 
     border-radius: 15px;
